@@ -18,7 +18,4 @@
 *.toc
 *.nav
 *.bcf
-instances_chessgame
-results_chessgame
-instances_POMDP
-results_POMDP 
+results
