@@ -68,8 +68,8 @@ function test_industry_dtree(q,dtree,nb_samples,sample_size,param)
     for i in 2:length(x)
         seq_x = cat(seq_x,x[i],dims=1)
         seq_y = cat(seq_y,y[i],dims=1)
-	    output_y = label(y[i],param.dimension,q)
-	    seq_label_y = cat(seq_label_y,output_y,dims=1)
+	output_y = label(y[i],param.dimension,q)
+	seq_label_y = cat(seq_label_y,output_y,dims=1)
     end
     y = seq_y
     x = seq_x
