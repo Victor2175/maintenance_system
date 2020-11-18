@@ -46,7 +46,7 @@ function get_sample_data(init_depth,sample_size,param)
      
         #println([a >= 100 for a in x[t,:]])
         #We stop the simulation when 
-        if sum([a >= 100 for a in x[t,:]]) >= 1
+        if sum([a >= 100 for a in y[t,:]]) >= 1
             t_stop = t
             break
         end
